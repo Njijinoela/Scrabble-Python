@@ -1,5 +1,5 @@
 class Board:
-    def _init_(self):
+    def __init__(self):
         self.size = 15
         self.board = [[" " for _ in range(self.size)] for _ in range(self.size)]
         self.special_tiles = self._initialize_special_tiles()
@@ -80,6 +80,6 @@ class Board:
         # Add more advanced move validation logic here as needed
         return self._can_place_word(word, start_row, start_col, direction)
 
-if __name__== "_main_":
+if __name__ == "__main__":
     scrabble_board = Board()
     scrabble_board.print_board()
