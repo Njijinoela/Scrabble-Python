@@ -80,6 +80,6 @@ class Board:
         # Add more advanced move validation logic here as needed
         return self._can_place_word(word, start_row, start_col, direction)
 
-if _name_ == "_main_":
+if __name__== "_main_":
     scrabble_board = Board()
     scrabble_board.print_board()
